@@ -5,4 +5,10 @@ netty:
   host: ${NETTY_BIND_HOST:192.168.31.248}
   bossGroup: ${NETTY_BOSS_GROUP:2}
   workerGroup: ${NETTY_WORKER_GROUP:16}
+mongodb:
+  host: ${MONGODB_HOST:localhost}
+  port: ${MONGODB_PORT:27017}
+  username: ${MONGODB_USERNAME:admin}
+  password: ${MONGODB_PASSWORD:admin}
+  database: ${MONGODB_DATABASE:admin}
 

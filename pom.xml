@@ -23,6 +23,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <spring-boot.version>2.7.5</spring-boot.version>
+        <guava.version>31.1-jre</guava.version>
     </properties>
 
     <dependencyManagement>
@@ -34,6 +35,12 @@
                 <scope>import</scope>
                 <version>${spring-boot.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
