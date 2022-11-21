@@ -1,0 +1,8 @@
+server:
+  port: ${SERVER_PORT:8000}
+netty:
+  port: ${NETTY_BIND_PORT:9000}
+  host: ${NETTY_BIND_HOST:192.168.31.248}
+  bossGroup: ${NETTY_BOSS_GROUP:2}
+  workerGroup: ${NETTY_WORKER_GROUP:16}
+
