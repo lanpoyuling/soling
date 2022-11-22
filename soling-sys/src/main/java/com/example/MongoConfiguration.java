@@ -12,6 +12,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.data.mongodb.ReactiveMongoDatabaseFactory;
 import org.springframework.data.mongodb.core.ReactiveMongoTemplate;
 import org.springframework.data.mongodb.core.SimpleReactiveMongoDatabaseFactory;
+import org.springframework.data.mongodb.repository.config.EnableReactiveMongoRepositories;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.Resource;
@@ -19,6 +20,7 @@ import java.util.List;
 
 @Configuration
 @Slf4j
+@EnableReactiveMongoRepositories
 public class MongoConfiguration {
     @Resource
     private MongoSetting mongoSetting;
